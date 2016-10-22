@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="com.ning:async-http-client:1.9.38" type="repository">
+    <properties maven-id="com.ning:async-http-client:1.9.38" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/ning/async-http-client/1.9.38/async-http-client-1.9.38.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty/3.10.5.Final/netty-3.10.5.Final.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/ning/async-http-client/1.9.38/async-http-client-1.9.38-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>
