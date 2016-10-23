@@ -31,18 +31,18 @@ public class IndexTrader {
     private String puzzle;
     private String info;
     private String submission;
-    private List<TraderData> traderData;
+    private List<Quote> quotes;
 
     @JsonCreator
     public IndexTrader(@JsonProperty("puzzle") String puzzle,
                        @JsonProperty("info") String info,
                        @JsonProperty("submission") String submission,
-                       @JsonProperty("data") List<TraderData> traderData) {
+                       @JsonProperty("data") List<Quote> quotes) {
 
         this.puzzle = puzzle;
         this.info = info;
         this.submission = submission;
-        this.traderData = traderData;
+        this.quotes = quotes;
     }
 
     public String getPuzzle() {
@@ -69,11 +69,11 @@ public class IndexTrader {
         this.submission = submission;
     }
 
-    public List<TraderData> getTraderData() {
-        return traderData;
+    public List<Quote> getQuotes() {
+        return quotes;
     }
 
-    public void setTraderData(List<TraderData> traderData) {
-        this.traderData = traderData;
+    public void setQuotes(List<Quote> quotes) {
+        this.quotes = quotes;
     }
 }

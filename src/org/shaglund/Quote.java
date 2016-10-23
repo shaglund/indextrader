@@ -20,7 +20,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
             "value": 0
         },
  */
-public class TraderData {
+public class Quote {
 
     private long date;
     private String paper;
@@ -33,15 +33,15 @@ public class TraderData {
     private int value;
 
     @JsonCreator
-    public TraderData(@JsonProperty("quote_date") long quoteDate,
-                    @JsonProperty("paper") String paper,
-                    @JsonProperty("exch") String exchange,
-                    @JsonProperty("open") float open,
-                    @JsonProperty("high") float high,
-                    @JsonProperty("low") float low,
-                    @JsonProperty("close") float close,
-                    @JsonProperty("volume") int volume,
-                    @JsonProperty("value") int value) {
+    public Quote(@JsonProperty("quote_date") long quoteDate,
+                 @JsonProperty("paper") String paper,
+                 @JsonProperty("exch") String exchange,
+                 @JsonProperty("open") float open,
+                 @JsonProperty("high") float high,
+                 @JsonProperty("low") float low,
+                 @JsonProperty("close") float close,
+                 @JsonProperty("volume") int volume,
+                 @JsonProperty("value") int value) {
 
         this.date = quoteDate;
         this.paper = paper;
